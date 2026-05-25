@@ -254,9 +254,11 @@ export default function AdminProductsPage() {
 
                           <div className="flex flex-col md:flex-row gap-3">
 
-                            <button className="px-4 py-2 rounded-xl bg-[#eef5ef] text-[#5f2c17] hover:bg-[#dce8dd] transition">
-                              Edit
-                            </button>
+                            <Link href={`/admin/products/edit/${product.id}`}>
+                              <button className="px-4 py-2 rounded-xl bg-[#eef5ef] text-[#5f2c17] hover:bg-[#dce8dd] transition">
+                                Edit
+                              </button>
+                            </Link>
 
                             <button
                               onClick={() =>
