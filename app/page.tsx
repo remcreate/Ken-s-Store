@@ -1,3 +1,4 @@
+import AnnouncementSection from "@/components/AnnouncementSection";
 import { Fraunces } from "next/font/google";
 
 const fraunces = Fraunces({
@@ -26,8 +27,10 @@ export default function Home() {
           Shop Now
         </a>
       </section>
-
-      {/*ABOUT INFO*/}
+      {/*ANNOUNCEMENT SECTION*/}
+      <AnnouncementSection />
+      
+            {/*ABOUT INFO*/}
     </main>
   );
 }
